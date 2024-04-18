@@ -10,7 +10,7 @@ def index():
 
 @app.route('/detect', methods=['POST'])
 def detect():
-    result = model.predict(source="/media/ubuntu/DATA/Hung/DA/Fire_Detection/Security_Camera_Video_of_Fire_at_WLNE.mp4", imgsz=640, conf=0.4, show=True)
+    result = model.predict(source="Security_Camera_Video_of_Fire_at_WLNE.mp4", imgsz=640, conf=0.4, show=True)
     return result.imgs[0]
 
 if __name__ == '__main__':
