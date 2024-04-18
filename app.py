@@ -3,7 +3,7 @@ from ultralytics import YOLO
 
 app = Flask(__name__ ,static_url_path='/static')
 model = YOLO('best.pt')
-
+####
 @app.route('/')
 def index():
     return render_template('index.html')
