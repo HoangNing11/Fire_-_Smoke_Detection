@@ -6,7 +6,7 @@ import time
 
 
 # cap = cv2.VideoCapture("Fire_Detection/Security_Camera_Video_of_Fire_at_WLNE.mp4")
-cap = cv2.VideoCapture("Security_Camera_Video_of_Fire_at_WLNE.mp4")
+cap = cv2.VideoCapture("Electrica_Fire_Caught_on_Surveillance_Video_with_Fire_Sprinkler_Activation.mp4")
 model = get_model(model_id="fire-detection-jtuly/2", api_key="OjnJPIp598mu7NeirnOM")
 
 # used to record the time when we processed last frame 
